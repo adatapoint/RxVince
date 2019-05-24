@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3697884E0937AF6B91E25B0E /* Pods_RxVince.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6388904581BBCC21E20FAE77 /* Pods_RxVince.framework */; };
 		68CC24D32295FCAF00EE364B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CC24D22295FCAF00EE364B /* AppDelegate.swift */; };
 		68CC24D52295FCAF00EE364B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CC24D42295FCAF00EE364B /* ViewController.swift */; };
 		68CC24D82295FCAF00EE364B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68CC24D62295FCAF00EE364B /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CB974E156C6F3DB881BC030 /* Pods-RxVince.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxVince.debug.xcconfig"; path = "Target Support Files/Pods-RxVince/Pods-RxVince.debug.xcconfig"; sourceTree = "<group>"; };
+		6388904581BBCC21E20FAE77 /* Pods_RxVince.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxVince.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68CC24CF2295FCAF00EE364B /* RxVince.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxVince.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68CC24D22295FCAF00EE364B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68CC24D42295FCAF00EE364B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		68CC24D92295FCB000EE364B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68CC24DC2295FCB000EE364B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68CC24DE2295FCB000EE364B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAC7CA21C198443486B7F7AF /* Pods-RxVince.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxVince.release.xcconfig"; path = "Target Support Files/Pods-RxVince/Pods-RxVince.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3697884E0937AF6B91E25B0E /* Pods_RxVince.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F5BC1CBACE2BFC9CE8F2768 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CB974E156C6F3DB881BC030 /* Pods-RxVince.debug.xcconfig */,
+				BAC7CA21C198443486B7F7AF /* Pods-RxVince.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		68CC24C62295FCAF00EE364B = {
 			isa = PBXGroup;
 			children = (
 				68CC24D12295FCAF00EE364B /* RxVince */,
 				68CC24D02295FCAF00EE364B /* Products */,
+				4F5BC1CBACE2BFC9CE8F2768 /* Pods */,
+				75EE766E25FBDEA4FC36DFE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = RxVince;
 			sourceTree = "<group>";
 		};
+		75EE766E25FBDEA4FC36DFE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6388904581BBCC21E20FAE77 /* Pods_RxVince.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68CC24E12295FCB000EE364B /* Build configuration list for PBXNativeTarget "RxVince" */;
 			buildPhases = (
+				7F899E10E03378B0BECC63FF /* [CP] Check Pods Manifest.lock */,
 				68CC24CB2295FCAF00EE364B /* Sources */,
 				68CC24CC2295FCAF00EE364B /* Frameworks */,
 				68CC24CD2295FCAF00EE364B /* Resources */,
+				7DD54CAA732E5665E81A5553 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7DD54CAA732E5665E81A5553 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxVince/Pods-RxVince-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxVince/Pods-RxVince-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxVince/Pods-RxVince-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F899E10E03378B0BECC63FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxVince-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		68CC24CB2295FCAF00EE364B /* Sources */ = {
@@ -280,6 +348,7 @@
 		};
 		68CC24E22295FCB000EE364B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB974E156C6F3DB881BC030 /* Pods-RxVince.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +367,7 @@
 		};
 		68CC24E32295FCB000EE364B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAC7CA21C198443486B7F7AF /* Pods-RxVince.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
